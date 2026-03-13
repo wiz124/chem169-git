@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
 </head>
 
 
@@ -14,16 +15,56 @@
 <div>
   <h1>Alphafold Automator</h1>  
   <p style="font-size: .5rem">only works with proteins for now</p>
+  <p style="font-size: .5rem">needs to be on alphafold server tab to work</p>
+  <div class="status-pill waiting" id="pageStatus"></div>
 </div>
 <div class="tabs">
   <button class="tab active" data-tab="single">Single</button>
   <button class="tab" data-tab="batch">Batch</button>
-  <button class="tab" data-tab="monitor">Monitor</button>
 </div>
+<div class="info-banner" id="notOnPage" style="display:none">
+  !!! Navigate to <strong>alphafoldserver.com</strong> to use automation features.!!!
+</div>
+
+
+<div class="panel active" id="panel-single">
 <!--Singular input-->
+  <div class="field">
+      <div id="rawSection" class="field" style="margin-top:12px">
+      <label>Amino Acid / Nucleotide Sequence</label>
+      <textarea id="rawSequence" placeholder="Paste sequence here (ACGT... or amino acids)&#10;FASTA headers (>name) are automatically stripped"></textarea>
+      </div>
+    </div>
 
-<!--Batch input by fasta file-->
+    <button class="btn" id='single_submission_btn_click'">Submit Job</button>
+</div>
 
+  <!--Batch input-->
+<div class="panel" id="panel-batch">
+  <div class="info-banner">
+    Upload a multi-sequence FASTA or add sequences individually. Each sequence = one job.
+  </div>
+ 
+  <div class="dropzone" id="batchDropzone" style="border-style: dotted" onclick="document.getElementById('batchFasta').click()">
+    <div class="dropzone-icon">📦</div>
+    <div class="dropzone-text"><strong>Click or drop</strong> a multi-sequence FASTA</div>
+    <input type="file" id="batchFasta" accept=".fasta,.fa,.txt">
+  </div>
+ 
+  <div class="section-title" id="batchCountLabel">Queued Jobs (0)</div>
+  <div id="batchList">
+    <div class="empty-batch">No sequences loaded yet</div>
+  </div>
+ 
+  <div class="progress-bar-wrap" id="batchProgress" style="display:none">
+    <div class="progress-bar" id="batchProgressBar"></div>
+  </div>
+ 
+  <div class="btn-row"> 
+    <button class="btn btn-secondary" id="clear_batch" style="color: red"> Clear</button>
+    <button class="btn " id="submitBatch"> Run Batch</button>
+  </div>
+</div>
 
 
 
