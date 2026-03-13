@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
-  <script src="popup.js" defer></script>
+  <script src="popup.js" ></script>
 </head>
 
 
@@ -45,7 +45,7 @@
     Upload a multi-sequence FASTA or add sequences individually. Each sequence = one job.
   </div>
  
-  <div class="dropzone" id="batchDropzone" style="border-style: dotted" onclick="document.getElementById('batchFasta').click()">
+  <div class="dropzone" id="batchDropzone" onclick="document.getElementById('batchFasta').click()">
     <div class="dropzone-icon">📦</div>
     <div class="dropzone-text"><strong>Click or drop</strong> a multi-sequence FASTA</div>
     <input type="file" id="batchFasta" accept=".fasta,.fa,.txt">

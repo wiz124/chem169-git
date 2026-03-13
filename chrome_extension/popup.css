@@ -142,6 +142,7 @@ textarea { min-height: 100px; }
 .dropzone {
     border: 1.5px dashed var(--border);
     border-radius: 8px;
+    border-style:dashed;
     padding: 18px;
     text-align: center;
     cursor: pointer;

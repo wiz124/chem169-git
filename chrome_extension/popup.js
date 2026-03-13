@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (e.target.files[0]) handleFastaFile(e.target.files[0], 'batch');
   });
  
-  // Drag and drop - single
-  setupDragDrop('dropzone', file => handleFastaFile(file, 'single'));
-  setupDragDrop('batchDropzone', file => handleFastaFile(file, 'batch'));
+  // // Drag and drop - single
+  // setupDragDrop('dropzone', file => handleFastaFile(file, 'single'));
+  // setupDragDrop('batchDropzone', file => handleFastaFile(file, 'batch'));
  
   // Auto-save settings
-  ['autoConfirm','stripHeaders','trackJobs','batchDelay'].forEach(id => {
-    document.getElementById(id).addEventListener('change', saveSettings);
-  });
+  // ['autoConfirm','stripHeaders','trackJobs','batchDelay'].forEach(id => {
+  //   document.getElementById(id).addEventListener('change', saveSettings);
+  // });
 });
  
 // --- Page Status ---
@@ -474,17 +474,17 @@ async function clearJobs() {
   renderJobs();
 }
  
-// --- Settings ---
-function saveSettings() {
-  chrome.storage.local.set({
-    settings: {
-      autoConfirm: document.getElementById('autoConfirm').checked,
-      stripHeaders: document.getElementById('stripHeaders').checked,
-      trackJobs: document.getElementById('trackJobs').checked,
-      batchDelay: document.getElementById('batchDelay').value
-    }
-  });
-}
+ // --- Settings ---
+// function saveSettings() {
+//   chrome.storage.local.set({
+//     settings: {
+//       autoConfirm: document.getElementById('autoConfirm').checked,
+//       stripHeaders: document.getElementById('stripHeaders').checked,
+//       trackJobs: document.getElementById('trackJobs').checked,
+//       batchDelay: document.getElementById('batchDelay').value
+//     }
+//   });
+// }
  
 async function loadSettings() {
   const { settings } = await chrome.storage.local.get('settings');
@@ -492,7 +492,7 @@ async function loadSettings() {
   document.getElementById('autoConfirm').checked = settings.autoConfirm ?? true;
   document.getElementById('stripHeaders').checked = settings.stripHeaders ?? true;
   document.getElementById('trackJobs').checked = settings.trackJobs ?? true;
-  if (settings.batchDelay) document.getElementById('batchDelay').value = settings.batchDelay;
+  if (settings.batchDelay) document.getElementById('batchDelay').value = 3;
 }
  
 // --- Utilities ---
