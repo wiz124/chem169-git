@@ -1,0 +1,6 @@
+continue and preview job button-> class='mdc-button mat-mdc-button-base create-request mdc-button--unelevated mat-mdc-unelevated-button mat-primary dmat-mdc-button'
+job name-> class=mat-mdc-input-element dmat-mdc-input mat-mdc-form-field-input-control mdc-text-field__input ng-pristine ng-valid cdk-text-field-autofill-monitored ng-touched
+confirm and submit job->mdc-button mat-mdc-button-base confirm mdc-button--unelevated mat-mdc-unelevated-button mat-primary dmat-mdc-button
+pending job=mattooltip='pending'
+succeeded job-> mattooltip='succeeded'
+input sequence-> class=mat-mdc-input-element cdk-textarea-autosize sequence-input dmat-mdc-input mat-mdc-form-field-textarea-control mat-mdc-form-field-input-control mdc-text-field__input ng-pristine ng-invalid cdk-text-field-autofill-monitored ng-touched
