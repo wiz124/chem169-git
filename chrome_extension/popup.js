@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
  
   // File input - single FASTA
-  document.getElementById('fastaFile').addEventListener('change', e => {
-    if (e.target.files[0]) handleFastaFile(e.target.files[0], 'single');
-  });
+  // document.getElementById('fastaFile').addEventListener('change', e => {
+  //   if (e.target.files[0]) handleFastaFile(e.target.files[0], 'single');
+  // });
  
   // File input - batch FASTA
   document.getElementById('batchFasta').addEventListener('change', e => {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
  
   // // Drag and drop - single
   // setupDragDrop('dropzone', file => handleFastaFile(file, 'single'));
-  // setupDragDrop('batchDropzone', file => handleFastaFile(file, 'batch'));
+  setupDragDrop('batchDropzone', file => handleFastaFile(file, 'batch'));
  
   // Auto-save settings
   // ['autoConfirm','stripHeaders','trackJobs','batchDelay'].forEach(id => {
@@ -419,7 +419,7 @@ async function renderJobs() {
   const grid = document.getElementById('jobsGrid');
   if (trackedJobs.length === 0) {
     grid.innerHTML = '<div class="no-jobs">No jobs tracked yet.</div>';
-    return;
+    // return;
   }
   grid.innerHTML = trackedJobs.map((j, i) => `
     <div class="job-card">
