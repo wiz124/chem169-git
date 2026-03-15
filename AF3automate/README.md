@@ -7,14 +7,10 @@ DISCLAIMER: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WH
 
 Prerequisites for use:
     1. Open a google chrome instance in remote debugging mode
-    
-            -cd C:\path\to\your\chrome\exe
-            
-            -chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
-            
-            -type in browser: chrome://inspect/#remote-debugging and enable remote debugging
-            
-            -if successful, http://localhost:9222/json in web browser should reveal json text
+            `cd C:\path\to\your\chrome\exe`
+            `chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile`
+            `type in browser: chrome://inspect/#remote-debugging and enable remote debugging`
+             if successful: `http://localhost:9222/json in web browser should reveal json tex`
             
             -if you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
             
