@@ -1,0 +1,6 @@
+##################|TO BE EDITED BY THE USER|#######################
+INSTANCE=http://localhost:9222
+
+FASTA_FILE_NAME=test.fasta
+###################################################################
+Just in case you forget, look in script for example of what config.txt vars should look like
