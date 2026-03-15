@@ -5,7 +5,7 @@ This may change in the future to provide more functionality.
 
 DISCLAIMER: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WHETHER OR NOT AF3 CAN SUCCESSFULLY PREDICT YOUR JOBS. TO ALIGN WITH TERMS AND CONDITIONS SET BY THE GOOGLE DEEPMIND ALPHAFOLD SERVER, THIS SCRIPT SHOULD ONLY BE USED FOR NON-COMMERCIAL PURPOSES. uwu pls i dont wanna get sued 
 
-Prerequisites for use:
+**Prerequisites for use**:
 
 - Open a google chrome instance in remote debugging mode
 
@@ -21,7 +21,7 @@ Prerequisites for use:
 
 - Log in to AF3 server in your remote debugging chrome browser
 
-How To Use:
+**How To Use**:
 1. Upload fasta file to the same folder as AF3jobautomation.py script
 2. Check if URL, INSTANCE, and FASTA_FILE_NAME in the config.txt are correct
 3. Navigate to the AF3 server tab, make sure you are at the page where the sequences can be inputted
