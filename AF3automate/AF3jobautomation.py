@@ -113,6 +113,7 @@ def run(playwright):
         browser=playwright.chromium.connect_over_cdp(configs['INSTANCE'])
     except:
         print('Trouble connecting to Chrome')
+        print('Ensure Chrome is in remote debugging mode as per the README')
         sys.exit()
 
     default_context=browser.contexts[0]
