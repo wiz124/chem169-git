@@ -84,7 +84,7 @@ def checkForAF3(all_pages:Page,URL):
     if page=='':
         print('*'*80)
         print('!!!ERROR!!! No alphafold server tab exists or is logged into')
-        print('Open AF3 to server interface and please try again')
+        print('Open AF3 to the server interface and please try again')
         print('*'*80)
         sys.exit()
         return False
