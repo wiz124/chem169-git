@@ -6,7 +6,6 @@ This may change in the future to provide more functionality.
 DISCLAIMER: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WHETHER OR NOT AF3 CAN SUCCESSFULLY PREDICT YOUR JOBS. TO ALIGN WITH TERMS AND CONDITIONS SET BY THE GOOGLE DEEPMIND ALPHAFOLD SERVER, THIS SCRIPT SHOULD ONLY BE USED FOR NON-COMMERCIAL PURPOSES. uwu pls i dont wanna get sued 
 
 Prerequisites for use:
-
     1. Open a google chrome instance in remote debugging mode
     
             -cd C:\path\to\your\chrome\exe
