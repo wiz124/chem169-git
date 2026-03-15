@@ -12,7 +12,9 @@ This may change in the future to provide more functionality.
 ```
 cd C:\path\to\your\chrome\exe
 chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
-type in browser: chrome://inspect/#remote-debugging and enable remote debugging
+```
+type in browser: ```chrome://inspect/#remote-debugging``` and enable remote debugging
+
 if successful, type in the web browser: http://localhost:9222/json 
 if you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
 ```
