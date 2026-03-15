@@ -29,7 +29,7 @@ This may change in the future to provide more functionality.
 2. Check if URL, INSTANCE, and FASTA_FILE_NAME in the config.txt are correct
 3. Navigate to the AF3 server tab, make sure you are at the page where the sequences can be inputted
 4. in a terminal: 
-        '''cd C:\path\to\script\folder '''
+       ```cd C:\path\to\script\folder ```
 5. then: 
         py AF3jobautomation.py
 
