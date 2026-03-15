@@ -31,5 +31,5 @@ This may change in the future to provide more functionality.
 4. in a terminal: 
        ```cd C:\path\to\script\folder ```
 5. then: 
-        py AF3jobautomation.py
+        ```py AF3jobautomation.py```
 
