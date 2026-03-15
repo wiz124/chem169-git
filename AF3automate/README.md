@@ -10,8 +10,8 @@ This may change in the future to provide more functionality.
 - Open a google chrome instance in remote debugging mode
 > in cmd:
 ```
-> cd C:\path\to\your\chrome\exe
-> chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
+ cd C:\path\to\your\chrome\exe
+ chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
 ```
 > type in browser: ```chrome://inspect/#remote-debugging``` and enable remote debugging
 
