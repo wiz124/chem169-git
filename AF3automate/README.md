@@ -20,7 +20,7 @@ This may change in the future to provide more functionality.
 
 - Have playwright python installed 
 
-          - look up documentation on official website: https://playwright.dev/python/docs/intro
+ - look up documentation on official website: https://playwright.dev/python/docs/intro
 
 - Log in to AF3 server in your remote debugging chrome browser
 
