@@ -7,19 +7,19 @@ DISCLAIMER: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WH
 
 Prerequisites for use:
 
-    - Open a google chrome instance in remote debugging mode
-    
-            >cd C:\path\to\your\chrome\exe
-            >chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
-            >type in browser: chrome://inspect/#remote-debugging and enable remote debugging
-            >if successful, type in the web browser: http://localhost:9222/json 
-            >if you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
-            
-    - Have playwright python installed 
-    
-        -look up documentation on official website: https://playwright.dev/python/docs/intro
-        
-    - Log in to AF3 server in your remote debugging chrome browser
+- Open a google chrome instance in remote debugging mode
+
+>cd C:\path\to\your\chrome\exe
+>chrome --remote-debugging-port=9222 --user-data-dir=C:\path\to\your\custom\profile
+>type in browser: chrome://inspect/#remote-debugging and enable remote debugging
+>if successful, type in the web browser: http://localhost:9222/json 
+>if you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
+
+- Have playwright python installed 
+
+-look up documentation on official website: https://playwright.dev/python/docs/intro
+
+- Log in to AF3 server in your remote debugging chrome browser
 
 How To Use:
 1. Upload fasta file to the same folder as AF3jobautomation.py script
