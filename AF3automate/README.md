@@ -18,9 +18,9 @@ This may change in the future to provide more functionality.
 > If successful, type in the web browser: ```http://localhost:9222/json```
 > If you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
 
-- Have playwright python installed 
+- Have playwright python installed. 
 
-    look up documentation on official website: https://playwright.dev/python/docs/intro
+    Look up documentation on official website: https://playwright.dev/python/docs/intro
 
 - Log in to AF3 server in your remote debugging chrome browser
 
