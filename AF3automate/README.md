@@ -3,7 +3,7 @@ Only known to work with windows and GOOGLE CHROME for now(I have yet to test com
 The script takes in an fasta file in the same directory(specify file name in script). It will ONLY submit monomeric proteins and nothing else.
 This may change in the future to provide more functionality. 
 
-**DISCLAIMER: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WHETHER OR NOT AF3 CAN SUCCESSFULLY PREDICT YOUR JOBS. TO ALIGN WITH TERMS AND CONDITIONS SET BY THE GOOGLE DEEPMIND ALPHAFOLD SERVER, THIS SCRIPT SHOULD ONLY BE USED FOR NON-COMMERCIAL PURPOSES. uwu pls i dont wanna get sued **
+**DISCLAIMER**: THIS SCRIPT ONLY GUARANTEES ENTRY OF THE JOBS. DOES NOT GUARANTEE WHETHER OR NOT AF3 CAN SUCCESSFULLY PREDICT YOUR JOBS. TO ALIGN WITH TERMS AND CONDITIONS SET BY THE GOOGLE DEEPMIND ALPHAFOLD SERVER, THIS SCRIPT SHOULD ONLY BE USED FOR NON-COMMERCIAL PURPOSES. uwu pls i dont wanna get sued
 
 **Prerequisites for use**:
 
