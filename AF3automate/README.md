@@ -15,7 +15,8 @@ This may change in the future to provide more functionality.
 ```
 > type in browser: ```chrome://inspect/#remote-debugging``` and enable remote debugging
 
-> If successful, type in the web browser: ```http://localhost:9222/json```
+> If successful, type in the web browser: ```http://localhost:9222/json``` a json file should appear
+> 
 > If you are using a different port, make sure that you change the INSTANCE in config.txt to reflect change
 
 - Have playwright python installed. 
